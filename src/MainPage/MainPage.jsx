@@ -1,25 +1,16 @@
 import { Container } from '@chakra-ui/react';
 import React from 'react'
+import { AccordionItemTrigger, AccordionRoot } from '../components/ui/accordion';
 
 export default function MainPage() {
   return (
  <>
  <Container>
-    <Accordion allowMultiple>
-      <AccordionItem>
-        <h2>
-          <AccordionButton>
-            <Box as="span" flex="1" textAlign="left">
-              Section 1
-            </Box>
-            <AccordionIcon />
-          </AccordionButton>
-        </h2>
-        <AccordionPanel pb={4}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          </AccordionPanel>
-      </AccordionItem>
-      </Accordion>
+    <AccordionRoot>
+        <AccordionRoot.Item>Accordion Item 1</AccordionRoot.Item>
+        <AccordionRoot.Item>Accordion Item 2</AccordionRoot.Item>
+        <AccordionItemTrigger></AccordionItemTrigger>
+    </AccordionRoot>
  </Container>
  </>
   );

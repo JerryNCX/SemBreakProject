@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import MainPage from './MainPage/MainPage'
+import Header from './MainPage/Header'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,10 +12,10 @@ function App() {
     <>
     {/* <BrowserRouter>
     <Routes>
-      <Route path="/" element={<MainPage />} />
+      <Route path="/" element={<Header />} />
     </Routes>
     </BrowserRouter> */}
-    <MainPage />
+    <Header />
     </>
   )
 }

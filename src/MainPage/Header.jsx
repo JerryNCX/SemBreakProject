@@ -29,16 +29,8 @@ const HeadTitle = [
 export default function Header() {
   return (
     <>
-      <Flex
-        bg="blue"
-        h="100px"
-        position="fixed"
-        top="0"
-        left="0"
-        w="100%"
-        zIndex="1000"
-      >
-        <HStack justify="space-between">
+      <Flex bg="blue" h="100px">
+        <HStack>
           <Flex>
             <Image
               src="https://cdn-icons-png.flaticon.com/512/4156/4156292.png"

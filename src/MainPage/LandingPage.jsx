@@ -10,7 +10,7 @@ export default function () {
         <Flex position="fixed" top="0" left="0" zIndex="1000">
           <Header />
         </Flex>
-        <Flex position="fixed" left="0">
+        <Flex position="center">
           <HeroSection />
         </Flex>
       </Stack>

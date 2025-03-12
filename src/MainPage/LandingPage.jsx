@@ -1,19 +1,19 @@
 import React from "react";
 import Header from "./Header";
-import { Flex, Stack } from "@chakra-ui/react";
+import { Box, Flex, Stack } from "@chakra-ui/react";
 import HeroSection from "./HeroSection";
 
 export default function LandingPage() {
   return (
     <>
-      <Stack>
-        <Flex position="fixed" top="0" left="0" zIndex="1000">
+      <Box position="fixed" top="0" left="0" right="0" w="100vw" h="100vh">
+        <Box bg="blue" zIndex="1000">
           <Header />
-        </Flex>
-        <Flex position="">
+        </Box>
+        <Box bg="cyan.700" display="flex" alignItems="center" justifyContent="center">
           <HeroSection />
-        </Flex>
-      </Stack>
+        </Box>
+      </Box>
     </>
   );
 }

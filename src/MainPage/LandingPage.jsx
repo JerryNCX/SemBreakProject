@@ -6,11 +6,9 @@ import HeroSection from "./HeroSection";
 export default function LandingPage() {
   return (
     <>
-      <Box position="fixed" top="0" left="0" right="0" w="100vw" h="100vh">
-        <Box bg="blue" zIndex="1000">
+      <Box position="fixed" top="0" left="0" right="0" w="100vw" h="100vh" bgColor="#043873">
+        <Box>
           <Header />
-        </Box>
-        <Box bg="cyan.700" display="flex" alignItems="center" justifyContent="center">
           <HeroSection />
         </Box>
       </Box>

@@ -29,19 +29,19 @@ const HeadTitle = [
 export default function Header() {
   return (
     <>
-      <Flex bg="blue" h="100px">
-        <HStack>
-          <Flex>
-            <Image
-              src="https://cdn-icons-png.flaticon.com/512/4156/4156292.png"
-              w="25%"
-              pl="5"
-            />
-            <Text fontSize="3xl" fontWeight="bold" alignSelf="center" pl="5">
-              WhiteSpace
-            </Text>
-          </Flex>
-
+      <Flex h="100px" align="center" px="10" justify="space-between">
+        <Flex align="center" flex="1">
+          <Image
+            src="https://cdn-icons-png.flaticon.com/512/4156/4156292.png"
+            maxW="100%"
+            w={["50px","75px","100px"]}
+            objectFit="contain"
+          />
+          <Text fontSize="3xl" fontWeight="bold" pl="5">
+            WhiteSpace
+          </Text>
+        </Flex>
+        <Box flex="1">
           <AccordionRoot collapsible>
             <HStack>
               {HeadTitle.map((item, index) => (
@@ -52,19 +52,18 @@ export default function Header() {
               ))}
             </HStack>
           </AccordionRoot>
-
-          <Flex gap="1" pr="5">
-            <Button color="white">Login</Button>
-            <Button bg="white">
-              <Container>
-                <HStack>
-                  Try Whitespace Free
-                  <Image src={RightArrow} maxW="20%" />
-                </HStack>
-              </Container>
-            </Button>
-          </Flex>
-        </HStack>
+        </Box>
+        <Box flex="1">
+          <Button color="white">Login</Button>
+          <Button bg="white">
+            <Container>
+              <HStack>
+                Try Whitespace Free
+                <Image src={RightArrow} maxW="20%" />
+              </HStack>
+            </Container>
+          </Button>
+        </Box>
       </Flex>
     </>
   );

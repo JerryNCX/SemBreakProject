@@ -16,7 +16,7 @@ import LinePattern from "../assets/Image/Element.svg";
 export default function HeroSection() {
   return (
     <>
-      <Flex px="7%" py="3%" bgImage={`url(${LinePattern})`} >
+      <Flex px="7%" py="3%">
         <Box flex="1/2" order={0}>
           <Stack align="start" textAlign="left" h="100%" justify="space-between" py="4%">
             <Box fontSize="65px" fontFamily={"body"}>

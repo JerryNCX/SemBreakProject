@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <>
       <Flex h="100px" align="center" px="10" justify="space-between">
-        <Flex align="center" flex="1">
+        <Flex align="center">
           <Image
             src="https://cdn-icons-png.flaticon.com/512/4156/4156292.png"
             maxW="100%"
@@ -41,21 +41,21 @@ export default function Header() {
             WhiteSpace
           </Text>
         </Flex>
-        <Box flex="1">
+        <Flex >
           <AccordionRoot collapsible>
-            <HStack>
+            <HStack gap="4">
               {HeadTitle.map((item, index) => (
                 <AccordionItem key={index} value={item.value}>
-                  <AccordionItemTrigger>{item.title}</AccordionItemTrigger>
+                  <AccordionItemTrigger bgColor="black">{item.title}</AccordionItemTrigger>
                   <AccordionItemContent>{item.content}</AccordionItemContent>
                 </AccordionItem>
               ))}
             </HStack>
           </AccordionRoot>
-        </Box>
-        <Box flex="1">
-          <Button color="white">Login</Button>
-          <Button bg="white">
+        </Flex>
+        <Flex gap="3">
+          <Button>Login</Button>
+          <Button>
             <Container>
               <HStack>
                 Try Whitespace Free
@@ -63,7 +63,7 @@ export default function Header() {
               </HStack>
             </Container>
           </Button>
-        </Box>
+        </Flex>
       </Flex>
     </>
   );

@@ -11,10 +11,20 @@ export default function LandingPage() {
     <>
       <Box top="0" left="0" right="0" w="100vw" bgColor="#043873">
         <Header />
-        <Flex bgImage={`url(${LinePattern})`} bgRepeat="no-repeat" bgSize="cover">
+        <Flex
+          bgImage={`url(${LinePattern})`}
+          bgRepeat="no-repeat"
+          bgSize="cover"
+        >
           <HeroSection />
         </Flex>
-        <Flex color="black" bgColor="white" bgRepeat="no-repeat" bgImage={`url(${background})`} bgSize="cover">
+        <Flex
+          color="black"
+          bgColor="white"
+          bgRepeat="no-repeat"
+          bgImage={`url(${background})`}
+          bgSize="cover"
+        >
           <WorkManagement />
         </Flex>
       </Box>

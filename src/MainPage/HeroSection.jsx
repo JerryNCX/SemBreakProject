@@ -9,7 +9,7 @@ export default function HeroSection() {
           <Box fontSize="65px" fontFamily={"sans-serif"} flex={5 / 10}>
             Get More Done With whitespace
           </Box>
-          <Box flex={3 / 10} maxW="70%">
+          <Box flex={3 / 10} maxW="90%">
             Project management software that enables your teams to collaborate,
             plan, analyze and manage everyday tasks
           </Box>

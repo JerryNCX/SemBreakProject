@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import RightArrow from "../assets/Image/reshot-icon-arrow-right-GKTFPJDL97.svg";
+import Logo from "../assets/Image/Logo Icon.svg";
 import {
   AccordionItem,
   AccordionItemContent,
@@ -32,16 +33,15 @@ export default function Header() {
       <Flex h="100px" align="center" px="10" justify="space-between">
         <Flex align="center">
           <Image
-            src="https://cdn-icons-png.flaticon.com/512/4156/4156292.png"
+            src={Logo}
             maxW="100%"
-            w={["50px","75px","100px"]}
             objectFit="contain"
           />
           <Text fontSize="3xl" fontWeight="bold" pl="5">
             WhiteSpace
           </Text>
         </Flex>
-        <Flex >
+        <Flex>
           <AccordionRoot collapsible>
             <HStack gap="4">
               {HeadTitle.map((item, index) => (

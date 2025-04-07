@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <>
       <Flex px="10%" py="3%" flexDir="row">
-        <Flex flexDir="column" maxW="50%" gap="2">
+        <Flex flexDir="column" maxW="60%" gap="2">
           <Box fontSize="65px" fontFamily={"sans-serif"} flex={5 / 10}>
             Get More Done With whitespace
           </Box>
@@ -20,7 +20,7 @@ export default function HeroSection() {
           </Box>
         </Flex>
 
-        <Flex maxW="50%">
+        <Flex maxW="40%">
           <Box>
             <Image
               src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"

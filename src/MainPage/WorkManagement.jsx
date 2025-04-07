@@ -1,6 +1,5 @@
 import { Box, Button, Flex, Text, Image } from "@chakra-ui/react";
 import RightArrow from "../assets/Image/reshot-icon-arrow-right-GKTFPJDL97.svg";
-import background from "../assets/Image/BACKGROUND.svg"
 import React from "react";
 
 export default function WorkManagement() {
@@ -24,13 +23,19 @@ export default function WorkManagement() {
           </Box>
         </Flex>
 
-        <Flex maxW="50%">
+        <Flex maxW="40%">
           <Box>
             <Image
               src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
               w="100%"
               maxW="600px"
             />
+          </Box>
+        </Flex>
+
+        <Flex>
+          <Box>
+            <Image src="" />
           </Box>
         </Flex>
       </Flex>

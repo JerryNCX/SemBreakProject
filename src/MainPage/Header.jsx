@@ -32,11 +32,7 @@ export default function Header() {
     <>
       <Flex h="100px" align="center" px="10" justify="space-between">
         <Flex align="center">
-          <Image
-            src={Logo}
-            maxW="100%"
-            objectFit="contain"
-          />
+          <Image src={Logo} maxW="100%" objectFit="contain" />
           <Text fontSize="3xl" fontWeight="bold" pl="5">
             WhiteSpace
           </Text>
@@ -46,7 +42,9 @@ export default function Header() {
             <HStack gap="4">
               {HeadTitle.map((item, index) => (
                 <AccordionItem key={index} value={item.value}>
-                  <AccordionItemTrigger bgColor="black">{item.title}</AccordionItemTrigger>
+                  <AccordionItemTrigger bgColor="black">
+                    {item.title}
+                  </AccordionItemTrigger>
                   <AccordionItemContent>{item.content}</AccordionItemContent>
                 </AccordionItem>
               ))}
